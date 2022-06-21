@@ -6,9 +6,10 @@ Created on Fri Aug 20 17:44:42 2021
 """
 
 import re
+import datetime
+increment=datetime.timedelta(days=1)
 
-
-def DateChanger(drag,push,url,increment):
+def DateChanger(drag,push,url):
     '''
     
     Parameters
@@ -61,10 +62,10 @@ def DateChanger(drag,push,url,increment):
     #temp6=temp3
     
     newurl=(og + "min" + firstsplit[0] + "A" + temp1 + "F" +temp2 + "F" +temp3.replace("_", "")  + "%2Ccd_" + "max" + lastsplit[0]+ "A" +  temp4 + "F" + temp5 + "F" + temp6)
-    
+    print(newurl)
     
     push=push+increment
     drag=drag+increment
     
     
-    return newurl,drag,push
+    return drag,push,newurl
