@@ -17,7 +17,7 @@ import urllib.request
 from bs4 import BeautifulSoup as soup
 from newspaper import Article
 from datetime import date
-from DateChanger import DateChanger
+from DateChanger import DateChanger,CompanyChange
 url="https://www.google.com/search?q=ericsson&biw=1440&bih=719&sxsrf=ALiCzsZxadn_z8_8rEjksk-Vq4mgzvngFw%3A1655816720043&source=lnt&tbs=cdr%3A1%2Ccd_min%3A9%2F15%2F2021%2Ccd_max%3A9%2F15%2F2021&tbm=nws"
 
 drag=date(2021, 9, 15)#Instantiation
@@ -73,3 +73,20 @@ for i in(range(days)):
             #print(article.text)
     
     drag,push,url=DateChanger(drag,push,url)
+    
+    
+    
+    
+    
+    
+ #Intended for easy gathering of articles for company for various dates.   
+#def ArticleFetch(company,start,end):
+    
+
+
+
+
+
+
+    
+    

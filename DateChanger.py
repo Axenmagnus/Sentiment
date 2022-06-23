@@ -69,3 +69,17 @@ def DateChanger(drag,push,url):
     
     
     return drag,push,newurl
+
+
+
+def CompanyChange(Company,url):
+    Company=str(Company)
+    start="search?q="
+    end="&biw="
+    currentCompany=((url.split(start))[1].split(end)[0])
+    url=url.replace(currentCompany,Company)
+    
+    return url
+    
+    
+    
