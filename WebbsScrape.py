@@ -74,8 +74,11 @@ def ArticleFetch(company,drag,push,url,endDate):
                 article.download()
                 article.parse()
                  
-                # print article text
-                #print(article.text)
+                
+                print(article.text)
+                print(len(article.text))
+        
+        
         
         drag,push,url=DateChanger(drag,push,url)
         
