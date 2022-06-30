@@ -90,7 +90,7 @@ def ArticleFetch(company,drag,push,url,endDate):
                     j=j+1
     
                 
-                #print(article.text)
+                print(article.text)
                 #print(len(article.text))
             #i+=1
         
